@@ -1,0 +1,105 @@
+body {
+    background-image: url("img.jpg");     /*img url: https://www.pinterest.ca/pin/63965257197575903/ */
+    background-size: cover;
+    position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+#header{
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 5px;
+    background: #203647;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    border-color: black;
+}
+#footer{
+    border-width: 1px;
+    border-style: solid;
+}
+#text-header{
+    position: center;
+    margin-right: 20%;
+}
+#text-footer{
+    position: center;
+    background: #203647;
+    padding: 20px 20px;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    border-color: black;
+    font-size: 20px;
+}
+.left{
+    display: inline-table;
+    width: 40%;
+    font-size: 35px;
+}
+.dtfield{
+    width: 30%;
+    float: right;
+}
+#logo{
+    float: left;
+    margin-left: 5%;
+    margin-top: -8%;
+}
+#car1, #car2, #car3, #car4{
+    width: 150px;
+
+}
+#form{
+    background: #203647;
+    color: white;
+    height: 1770px;
+    position:center;
+    box-shadow: 5px 5px 5px black;;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 60%;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    opacity: 95%;
+}
+h4{
+     text-align: left;
+     width: 70%;
+     margin-left: 15%;
+     margin-right: 15%;
+}
+h6{
+    color: white;
+}
+#boxed{
+    background-color: inherit;
+    text-align: center;
+    height: 150px;
+    width: 400px;
+    text-align: justify;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: white;
+    font-size: 15px;
+}
+#lastName{
+    border: 1px solid white ;
+    text-align: center;
+    width: 300px;
+}
+#firstName, #lastNames, #province, #email, #address, #phone{
+    border: 1px solid white ;
+    text-align: center;
+    width: 420px;
+}

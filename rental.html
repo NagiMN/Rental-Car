@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rental Page</title>
+    <script type="text/javascript" src="rental.js"></script>
+</head>
+<body>
+<hr width="100%" size="5px" color="whitesmoke">
+<center><h1>Client Information</h1></center>
+<hr width="100%" size="5px" color="whitesmoke"><br>
+<label>Search by Last Name:</label>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="lastName" ><br>
+<br>
+
+<h4><select id="boxed" onchange="controlForm(this.value)" style="cursor: pointer;" size="10"></select></h4>
+<br>
+<form id="rentalForm">
+    <fieldset>
+        <table>
+            <td>First Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="firstName" disabled="disabled"></td>
+        </table>
+        <table>
+            <td>Last Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="lastNames" disabled="disabled"></td>
+        </table>
+        <table>
+            <td>Address: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="address" disabled="disabled"></td>
+        </table>
+        <table>
+            <td>State/Province: &nbsp&nbsp&nbsp<input type="text" id="province" disabled="disabled"></td>
+        </table>
+        <table>
+            <td>Email Address: &nbsp&nbsp&nbsp<input type="text" id="email" disabled="disabled"></td>
+        </table>
+        <table>
+            <td>Phone Number: &nbsp&nbsp<input type="text" id="phone" disabled="disabled"></td>
+        </table>
+        <br>
+        <hr width="100%" size="5px" color="whitesmoke">
+        <center><h1>Rental Information</h1></center>
+        <hr width="100%" size="5px" color="whitesmoke">
+        <br>
+        <table>
+            <input type="radio" name="carType"  value="15" required disabled="disabled" id="type1"><label for="15">Compact - $15/day </label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="cars/car1.PNG" alt="compac-car" id="car1"></div><br>
+            <input type="radio" name="carType"  value="20" required disabled="disabled" id="type2"><label for="20">Mid-size - $20/day </label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="cars/car2.PNG" alt="mid-size" id="car2"></div><br>
+            <input type="radio" name="carType"  value="35" required disabled="disabled" id="type3"><label for="35">Luxury - $35/day </label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="cars/car3.PNG" alt="luxury" id="car3"></div><br>
+            <input type="radio" name="carType"  value="40" required disabled="disabled" id="type4"><label for="40">Van/Truck - $40/day </label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp<img src="cars/car4.PNG" alt="van/truck" id="car4"></div><br>
+        </table>
+        <br><br>
+        <table>
+            <input type=checkbox name=roofRack value="5" disabled="disabled" id="roofRack">Roof Rack or Bike Rack - Extra $5/day <br>
+            <input type=checkbox name=GPS value="10" disabled="disabled" id="GPS">GPS - Extra $10 <br>
+            <input type=checkbox name=childSeat value="0" disabled="disabled" id="childSeat">Child Seat - Free
+        </table>
+        <br>
+        <label>Rent for &nbsp&nbsp</label><input type="number" id="rentFor" min="1" max="30" required disabled="disabled"><label>&nbsp&nbsp Days</label>
+        <br><br>
+        <center><input type="button" id="rentNow" value="  Rent Now  " onclick="getRentCalculate()" disabled="disabled"></center>
+        <br>
+        <hr width="90%" size="3px" color="#203647">
+        <h4><span id="displayRentCalculate"></span></h4>
+    </fieldset>
+</form>
+
+</body>
+</html>
