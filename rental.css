@@ -1,105 +1,170 @@
 body {
     background-image: url("img.jpg");     /*img url: https://www.pinterest.ca/pin/63965257197575903/ */
     background-size: cover;
-    position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     z-index: -1;
+    margin-top: 165px;
+    padding-bottom: 5%;
 }
+
 #header{
-    border-width: 1px;
-    border-style: solid;
-    padding: 5px 5px;
     background: #203647;
     color: whitesmoke;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
-    border-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position:absolute;
 }
-#footer{
-    border-width: 1px;
-    border-style: solid;
-}
+
 #text-header{
-    position: center;
-    margin-right: 20%;
+    text-align: center;
+    padding-top: 30px;
+    margin-right: 15%;
 }
-#text-footer{
-    position: center;
+
+#footer{
     background: #203647;
     padding: 20px 20px;
     color: whitesmoke;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
     border-color: black;
-    font-size: 20px;
+    font-size: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
 }
+
+#footer a:hover {
+    opacity: 0.9;
+}
+
 .left{
     display: inline-table;
     width: 40%;
     font-size: 35px;
 }
-.dtfield{
-    width: 30%;
-    float: right;
-}
-#logo{
+
+img{
     float: left;
     margin-left: 5%;
-    margin-top: -8%;
+    width: 10%;
 }
+
 #car1, #car2, #car3, #car4{
     width: 150px;
 
 }
+
 #form{
     background: #203647;
     color: white;
-    height: 1770px;
-    position:center;
-    box-shadow: 5px 5px 5px black;;
+    box-shadow: 0 0 5px black;
     text-align: center;
-    border-style: solid;
     border-width: 1px;
-    border-color: black;
-    width: 60%;
-    border-radius: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    opacity: 95%;
+    width: 70%;
+    border-radius: 10px;
+    margin: auto;
+    opacity: 90%;
+    position:relative;
 }
+
 h4{
-     text-align: left;
-     width: 70%;
-     margin-left: 15%;
-     margin-right: 15%;
+    text-align: left;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
 h6{
     color: white;
 }
+
 #boxed{
     background-color: inherit;
+    width: 80%;
     text-align: center;
-    height: 150px;
-    width: 400px;
-    text-align: justify;
     overflow-x: hidden;
     overflow-y: auto;
     color: white;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+#rentalCars{
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+    font-size: 17px;
+    box-shadow: 0 0 10px black;
+}
+
+#rentNow{
+    text-align: center;
+    cursor: pointer;
+}
+
+.c-information{
+    width: 850px;
     font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-#lastName{
-    border: 1px solid white ;
-    text-align: center;
-    width: 300px;
+
+.c-information .row{
+    padding-top: 45px;
 }
-#firstName, #lastNames, #province, #email, #address, #phone{
-    border: 1px solid white ;
-    text-align: center;
-    width: 420px;
+
+.c-information label{
+    display: inline-block;
+    text-align: right;
+}
+
+.c-information input[type=text]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.c-information .col-1{
+    float: left;
+    width: 30%;
+}
+
+.c-information .col-2{
+    width: 70%;
+    float: right;
+}
+
+.c-information .c-table{
+    margin-left: 20px;
+    width: 70%;
+    border: none;
+}
+
+.search-ln{
+    padding-bottom: 20px;
+}
+
+.search-ln input[type=text]{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 30px;
+    width: 62%;
+}
+
+.search-ln label{
+    margin-left: 20px;
 }

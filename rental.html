@@ -4,65 +4,121 @@
     <meta charset="UTF-8">
     <title>Rental Page</title>
     <script type="text/javascript" src="rental.js"></script>
+    <link href="rental.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <hr width="100%" size="5px" color="whitesmoke">
 <center><h1>Client Information</h1></center>
 <hr width="100%" size="5px" color="whitesmoke"><br>
-<label>Search by Last Name:</label>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="lastName" ><br>
-<br>
 
-<h4><select id="boxed" onchange="controlForm(this.value)" style="cursor: pointer;" size="10"></select></h4>
-<br>
+<div class="search-ln">
+    <label>Search by Last Name:</label><input type="text" id="lastName">
+</div>
+
+<select id="boxed" onchange="controlForm(this.value)" size="4"></select>
+
 <form id="rentalForm">
-    <fieldset>
-        <table>
-            <td>First Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="firstName" disabled="disabled"></td>
+    <div class="c-information">
+        <table class="c-table">
+            <td>
+                <div class="row">
+                    <div class="col-1">
+                        <label>First Name:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="firstName" disabled="disabled">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label>Last Name:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="lastNames" disabled="disabled">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label>Address:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="address" disabled="disabled">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label>State/Province:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="province" disabled="disabled">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label>Email Address:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="email" disabled="disabled">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label>Phone Number:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="phone" disabled="disabled">
+                    </div>
+                </div>
+            </td>
         </table>
-        <table>
-            <td>Last Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="lastNames" disabled="disabled"></td>
-        </table>
-        <table>
-            <td>Address: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="address" disabled="disabled"></td>
-        </table>
-        <table>
-            <td>State/Province: &nbsp&nbsp&nbsp<input type="text" id="province" disabled="disabled"></td>
-        </table>
-        <table>
-            <td>Email Address: &nbsp&nbsp&nbsp<input type="text" id="email" disabled="disabled"></td>
-        </table>
-        <table>
-            <td>Phone Number: &nbsp&nbsp<input type="text" id="phone" disabled="disabled"></td>
-        </table>
-        <br>
+    </div>
+    <br>
         <hr width="100%" size="5px" color="whitesmoke">
         <center><h1>Rental Information</h1></center>
         <hr width="100%" size="5px" color="whitesmoke">
         <br>
-        <table>
-            <input type="radio" name="carType"  value="15" required disabled="disabled" id="type1"><label for="15">Compact - $15/day </label>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="cars/car1.PNG" alt="compac-car" id="car1"></div><br>
-            <input type="radio" name="carType"  value="20" required disabled="disabled" id="type2"><label for="20">Mid-size - $20/day </label>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="cars/car2.PNG" alt="mid-size" id="car2"></div><br>
-            <input type="radio" name="carType"  value="35" required disabled="disabled" id="type3"><label for="35">Luxury - $35/day </label>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="cars/car3.PNG" alt="luxury" id="car3"></div><br>
-            <input type="radio" name="carType"  value="40" required disabled="disabled" id="type4"><label for="40">Van/Truck - $40/day </label>
-            &nbsp&nbsp&nbsp&nbsp&nbsp<img src="cars/car4.PNG" alt="van/truck" id="car4"></div><br>
-        </table>
+
+            <ul>
+                
+                    <input type="radio" name="carType" value="15" required disabled="disabled" id="type1">
+                    <label for="15">Compact - $15/day </label><br>
+                    <img src="cars/car1.PNG" alt="compac-car" id="car1">
+                
+                <br><br><br><br><br>
+                
+                    <input type="radio" name="carType" value="20" required disabled="disabled" id="type2">
+                    <label for="20">Mid-size - $20/day </label><br>
+                    <img src="cars/car2.PNG" alt="mid-size" id="car2">
+                
+                <br><br><br><br><br>
+                
+                    <input type="radio" name="carType" value="35" required disabled="disabled" id="type3">
+                    <label for="35">Luxury - $35/day </label><br>
+                    <img src="cars/car3.PNG" alt="luxury" id="car3">
+                
+                <br><br><br><br>
+                
+                    <input type="radio" name="carType" value="40" required disabled="disabled" id="type4">
+                    <label for="40">Van/Truck - $40/day </label><br>
+                    <img src="cars/car4.PNG" alt="van/truck" id="car4">
+                
+                <br>
+            </ul>
         <br><br>
-        <table>
+
+        <ul>
             <input type=checkbox name=roofRack value="5" disabled="disabled" id="roofRack">Roof Rack or Bike Rack - Extra $5/day <br>
             <input type=checkbox name=GPS value="10" disabled="disabled" id="GPS">GPS - Extra $10 <br>
             <input type=checkbox name=childSeat value="0" disabled="disabled" id="childSeat">Child Seat - Free
-        </table>
+        </ul>
         <br>
-        <label>Rent for &nbsp&nbsp</label><input type="number" id="rentFor" min="1" max="30" required disabled="disabled"><label>&nbsp&nbsp Days</label>
+
+        <label>Rent for </label><input type="number" id="rentFor" min="1" max="30" required disabled="disabled"><label>&nbsp&nbsp Days</label>
         <br><br>
-        <center><input type="button" id="rentNow" value="  Rent Now  " onclick="getRentCalculate()" disabled="disabled"></center>
+        <input type="button" id="rentNow" value="  Rent Now  " onclick="getRentCalculate()" disabled="disabled">
         <br>
         <hr width="90%" size="3px" color="#203647">
         <h4><span id="displayRentCalculate"></span></h4>
-    </fieldset>
 </form>
 
 </body>

@@ -6,29 +6,33 @@
     <script type="text/javascript" src="rental.js"></script>
     <link href="rental.css" rel="stylesheet" type="text/css">
 </head>
-<body onload="dateANDtime()">
+<body>
 
-<header id="header">
-    <h2><span id="dtfield"></span></h2>
-    <div id="logo"><img src="logo.png" alt="company-Logo"></div>
-    <div id="text-header"><h1><b>Dodgy Brakes Car Rental</b></h1></div>
+<header>
+    <div id="header">
+        <img src="logo.png" alt="company-Logo">
+        <div id="text-header"><h1><b>DODGY BRAKES CAR RENTAL</b></h1></div>
+    </div>
 </header>
 <br>
 
-<form id="form">
-    <br><br>
-    <input type="button" id="rentalCars" value="  Click to Rent  " onclick="getCarRental()">
-    <hr width="90%" size="3px" color="#203647">
-    <h4><span id="displayRentalPage"></span></h4>
-    <table id="boxed"></table>
-</form>
-<br>
-<footer id="footer">
-    <div id="text-footer">
-        <a>Contact us &nbsp&nbsp|</a>&nbsp&nbsp
-        <a>Privacy & cookies &nbsp&nbsp|</a>&nbsp&nbsp
-        <a>Terms of use &nbsp&nbsp|</a>&nbsp&nbsp
-        <a>Terms & conditions &nbsp&nbsp|</a>&nbsp&nbsp
+<div id="form">
+    <form>
+        <br><br>
+        <input type="button" id="rentalCars" value="Rent Now!" onclick="getCarRental()">
+        <hr width="100%" size="3px" color="#203647">
+        <h4><span id="displayRentalPage"></span></h4>
+        <table id="boxed"></table>
+    </form>
+</div>
+
+
+<footer>
+    <div id="footer">
+        <a>Contact us |</a>
+        <a>About |</a>
+        <a>Privacy Policy |</a>
+        <a>Terms |</a>
         <a>&copy Dodgy Brakes Car Rental</a>
     </div>
 </footer>
